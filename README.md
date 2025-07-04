@@ -119,11 +119,22 @@ After downloading and extracting these datasets, ensure they are organized in a 
 
 We provide unified annotations for the full E2E dataset, merging polyps from all sources. Download the COCO-style JSON files for training, validation, and testing from the following links:
 
-| Split | Link                                                                                        |
-| ----- | ------------------------------------------------------------------------------------------- |
-| Train | [instances\_train.json](#)  |
-| Val   | [instances\_val.json](#)    |
-| Test  | [instances\_test.json](#)   |
+| Split | Download | Size |
+| ----- | ------------------------------------------------------------------------------------------- | --- |
+| Train | [instances\_train.json](https://drive.google.com/file/d/1UOkkTSjbFvWJxE6aBsUrbeFSKEXdEZXO/view?usp=sharing) | 89.5MB |
+| Val   | [instances\_val.json](https://drive.google.com/file/d/17DL1dQEjIxHQViO4VGuCG2lNxdRsnpK5/view?usp=sharing)   | 17.5MB |
+| Test  | [instances\_test.json](https://drive.google.com/file/d/19PIW6kZ4ZhOcYKcq82Zl5gFdWuIeogQ2/view?usp=sharing)  | 27.2MB |
+
+<details>
+<summary>Check the integrity of downloaded files</summary>
+Use the command `sha256sum` to get the checksum, e.g. `sha256sum *.json`:
+
+```
+f450daf779f62619e921def4e5167f893b005da7126fc18eb4e9a0273199cb16  instances_test.json
+6cd9699786ee123d745c302c35bb570c2e3b1350b8a24df78e13c116d5a9d287  instances_train.json
+e2928e86a5cdadfb10eb793b7cbfad641ef808111909afc4e5862b6d47c4a24d  instances_val.json
+```
+</details>
 
 Place these files in the e2e/annotations directory:
 
