@@ -1,0 +1,16 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# dependencies
+torch==2.7.0+cu128
+torchvision==0.22+cu128
+torchmetrics
+lightning==2.5.2
+tqdm
+numpy
+matplotlib
+transformers
+diffusers
+wandb
+scipy
+pycocotools
+dynaconf

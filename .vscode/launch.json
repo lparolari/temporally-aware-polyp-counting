@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "train",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "polypsense.e2e.cli",
+            "args": [
+                "--mode=train",
+                "--dataset_root=data/real-colon/splits/real_colon_dataset_coco_fmt_001_001_train_val_test",
+                "--num_workers=8",
+                "--max_epochs=50",
+                "--lr=0.00001",
+                "--batch_size=6",
+                "--im_size=232",
+                "--fragment_length=8",
+                "--fragment_stride=4",
+                "--fragment_drop_last",
+                "--min_tracklet_length=30",
+                "--bbox_scale_factor=5",
+                "--n_views=2",
+                "--backbone_arch=resnet50",
+                "--backbone_weights=IMAGENET1K_V2",
+                "--d_model=128",
+                "--temperature=0.25",
+                "--exp_name=training"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true // Set to false if you want to debug into installed libraries
+        }
+    ]
+}
