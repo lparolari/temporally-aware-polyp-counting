@@ -5,7 +5,7 @@
 
 [[paper](http://arxiv.org/abs/2507.02493)] [[code](https://github.com/lparolari/temporally-aware-polyp-counting)]
 
-🌟 Accepted to MICCAI 2025
+🌟 Accepted at MICCAI 2025
 
 ## Abstract
 
