@@ -10,7 +10,7 @@ import wandb
 from tqdm import tqdm
 
 from polypsense.e2e.dm import End2EndDataModule
-from polypsense.reid2.clustering import associate, get_clustering
+from polypsense.e2e.clustering import associate, get_clustering
 
 
 def run(
@@ -550,12 +550,8 @@ def get_parser():
         required=True,
         choices=[
             "threshold",
-            "agglomerative",
-            "dbscan",
-            "hdbscan",
             "affinity_propagation",
-            "temporal",
-            "mean_shift",
+            "temporal_affinity_propagation",
         ],
     )
     parser.add_argument("--clustering_hparams", type=json.loads, default=None)
