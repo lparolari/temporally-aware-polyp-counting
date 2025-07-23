@@ -348,7 +348,6 @@ def get_ds(
         n_views=None,
         seed=None,
         bbox_scale_range=None,
-        bbox_diagonal_ratio_range=None,
     )
 
     if split == "val":
