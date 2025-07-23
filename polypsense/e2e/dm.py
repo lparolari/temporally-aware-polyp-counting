@@ -66,7 +66,7 @@ class End2EndDataModule(L.LightningDataModule):
         self.aug_ioucrop = aug_ioucrop
         self.batch_size = batch_size
         self.eval_n_views = 2
-        self.eval_batch_size = 6
+        self.eval_batch_size = 16
         self.num_workers = num_workers
         self.n_views = n_views
         self.seed = seed
